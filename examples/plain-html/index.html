@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market snapshot</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem auto; max-width: 760px; padding: 0 1rem; color: #111; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .note { font-size: 12px; color: #555; }
+    ul { padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+  <h1>Market snapshot</h1>
+  <p class="note">Prices can be delayed. Nothing here is financial advice.</p>
+
+  <div class="grid">
+    <!-- Live price card. theme and range are optional; see the docs. -->
+    <div>
+      <iframe src="https://stocks.freetheai.org/embed/NASDAQ-AAPL" width="340" height="170"
+        style="border:0;max-width:100%" loading="lazy" title="Apple Inc. (AAPL) price - FreeTheAI Stocks"></iframe>
+      <p class="note"><a href="https://stocks.freetheai.org/symbols/NASDAQ-AAPL">AAPL stock price</a> by FreeTheAI Stocks</p>
+    </div>
+
+    <div>
+      <iframe src="https://stocks.freetheai.org/embed/BITSTAMP-BTCUSD?theme=dark&amp;range=1Y" width="340" height="170"
+        style="border:0;max-width:100%" loading="lazy" title="Bitcoin price - FreeTheAI Stocks"></iframe>
+      <p class="note"><a href="https://stocks.freetheai.org/symbols/BITSTAMP-BTCUSD">BTC price</a> by FreeTheAI Stocks</p>
+    </div>
+  </div>
+
+  <h2>Six-month chart</h2>
+  <a href="https://stocks.freetheai.org/symbols/NASDAQ-NVDA">
+    <img src="https://stocks.freetheai.org/chart/NASDAQ-NVDA.svg?range=6M" width="720" height="260"
+      alt="NVIDIA (NVDA) six-month price chart" loading="lazy">
+  </a>
+  <p class="note"><a href="https://stocks.freetheai.org/symbols/NASDAQ-NVDA">NVDA on FreeTheAI Stocks</a></p>
+
+  <h2>Latest headlines</h2>
+  <p>Read the full feed at <a href="https://stocks.freetheai.org/news/rss.xml">the RSS feed</a>.</p>
+  <ul>
+    <li><a href="https://stocks.freetheai.org/news">All write-ups on FreeTheAI Stocks</a></li>
+    <li><a href="https://stocks.freetheai.org/news?category=earnings">Earnings write-ups</a></li>
+    <li><a href="https://stocks.freetheai.org/news?category=crypto">Crypto write-ups</a></li>
+  </ul>
+</body>
+</html>
